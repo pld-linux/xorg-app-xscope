@@ -1,19 +1,21 @@
 Summary:	xscope - X Window Protocol viewer
 Summary(pl.UTF-8):	xscope - podglądacz protokołu X Window
 Name:		xorg-app-xscope
-Version:	1.4.1
+Version:	1.4.2
 Release:	1
 License:	MIT
 Group:		X11/Applications
-Source0:	http://xorg.freedesktop.org/releases/individual/app/xscope-%{version}.tar.bz2
-# Source0-md5:	ad80eb4ec8d807eb542c4e790c90e848
-URL:		http://xorg.freedesktop.org/
+Source0:	https://xorg.freedesktop.org/releases/individual/app/xscope-%{version}.tar.xz
+# Source0-md5:	25a94be1fc463cf1e38f6c249dbe83be
+URL:		https://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.60
 BuildRequires:	automake
 BuildRequires:	pkgconfig >= 1:0.19
+BuildRequires:	tar >= 1:1.22
 BuildRequires:	xorg-lib-xtrans-devel
 BuildRequires:	xorg-proto-xproto-devel >= 7.0.17
 BuildRequires:	xorg-util-util-macros >= 1.8
+BuildRequires:	xz
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -51,6 +53,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc AUTHORS COPYING ChangeLog NEWS README
+%doc AUTHORS COPYING ChangeLog NEWS README.md
 %attr(755,root,root) %{_bindir}/xscope
 %{_mandir}/man1/xscope.1*
