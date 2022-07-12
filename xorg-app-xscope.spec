@@ -1,12 +1,12 @@
 Summary:	xscope - X Window Protocol viewer
 Summary(pl.UTF-8):	xscope - podglądacz protokołu X Window
 Name:		xorg-app-xscope
-Version:	1.4.2
+Version:	1.4.3
 Release:	1
 License:	MIT
 Group:		X11/Applications
 Source0:	https://xorg.freedesktop.org/releases/individual/app/xscope-%{version}.tar.xz
-# Source0-md5:	25a94be1fc463cf1e38f6c249dbe83be
+# Source0-md5:	50722ef8761cdfd12305ddd8a480d5aa
 URL:		https://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.60
 BuildRequires:	automake
